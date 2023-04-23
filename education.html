@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOUTOUMIT EL MEHDI</title>
+
+
+    <link href="style.css" rel="stylesheet">
+	
+  <!--[if lte IE 8]>
+      <link href="dist/css/blockIE.css" rel="stylesheet">
+    <![endif]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQuery, as our little script depends on it -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css"> <!-- Load our font from Google -->
+  <!-- The JS code block has been moved into the index.js file.  -->
+  <script src="./index.js"></script>
+</head>
+
+
+
+<body>
+	<!-- This calls the little script written above. -->
+  <div class="preloader"></div>
+  <main>
+
+    <div class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">Education</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">Experience</a></li>
+          
+        </ul>
+    </div>
+      
+    <section class="education">
+        <div class="education-container">
+          <div class="education-school">
+            <img src="school1.jpg" alt="high school">
+            <h2>Mohamed 5 High school, Guelmim</h2>
+            <p>Program: Program 1</p>
+            <p>Graduated: 2015</p>
+          </div>
+          <div class="education-school">
+            <img src="school2.jpg" alt="CPGE">
+            <h2>CPGE, Guelmim</h2>
+            <p>Program: Program 2</p>
+            <p>Graduated: 2018</p>
+          </div>
+          <div class="education-school">
+            <img src="school3.jpg" alt="Engineer's degree">
+            <h2>INPT, Rabat</h2>
+            <p>Program: Program 3</p>
+            <p>Graduated: 2021</p>
+          </div>
+        </div>
+      </section>
+      
+
+	
+	<!-- Contact button section begins -->
+  <section class="content contact">
+     <a class="button-slide" data-hover="mehdiboutoumit03@gmail.com" href="mailto:mehdiboutoumit03@gmail.com">
+      <span>Talk To Me 👌</span>
+    </a>
+    
+    <!--     <div id='form'>
+        <h1>Drop a message below.</h1>
+        <p>And I'll get to you ASAP</p>
+        <form> 
+            <input type="text" placeholder="Your Awesome Name"> 
+            <input type="email" placeholder="Your cool email address">
+            <textArea placeholder="Message here please">
+            </textArea>
+            <div id='buttonDiv'>
+            <button>Send</button>
+            </div>
+        </form>
+        </div> -->
+    
+    </section>
+	<!-- Contact button section ends-->
+	
+	<!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
+  <footer>
+    <div class="wrapper">
+      <ul>
+        
+        <li>
+            
+          <a style="text-decoration: none;" href="https://www.linkedin.com/in/el-mehdi-boutoumit/" target="_blank"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin"></a>
+		</li>
+		<li>
+    		<a href="https://github.com/mehdiboutoumit" target="_blank"><img  class="logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            
+		</li>
+      </ul>
+    </div>
+	</footer>
+	<!-- Footer section ends -->
+  </main>
+  <!--This section would ONLY appear when an individual project 'box' is clicked, It gives more detail about the project. it contains-- IMAGE OF THE PROJECT, THE PROJECT'S NAME, THE PROJECT FULL DESCRIPTION, GITHUB LINK && PREVIEW LINK -->
+  <div class="popUp">
+    <div class="popUpImg"></div>
+    <div id="popUpText">
+      <h1>Project's Name</h1>
+      <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div>
+        <a href="" id="githubLink"></a>
+        <a href="" id="previewLink"></a>
+      </div>
+
+    </div>
+    <span id="cancelBtn">X</span>
+  </div>
+</body>
+
+
+</html>
