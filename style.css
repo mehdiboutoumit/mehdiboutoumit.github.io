@@ -273,10 +273,6 @@ b {
     bottom: 2rem
 }
 
-/* Intro section style ends */
-
-/****************************/
-
 .profil-section {
   display: flex;
   justify-content: center;
@@ -299,7 +295,9 @@ b {
           border-radius: 50%;
 }
 
-/* Project style section ends */
+/* Intro section style ends */
+
+/****************************/
 
 /******************************/
 
