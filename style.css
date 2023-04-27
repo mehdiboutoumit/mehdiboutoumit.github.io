@@ -14,7 +14,11 @@
   }
   
   .education-school {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   position: relative;
     margin: 30px;
     width: 300px;
     height: 400px;
@@ -55,7 +59,7 @@
     left: -100px;
     width: 600px;
     height: 300px;
-    background-color: rgba(3, 41, 233, 0.295);
+    
     
     transition: all 0.6s ease;
   }
@@ -74,7 +78,8 @@
   
 
 .navbar {
-   text-align: right;
+  
+  text-align: right;
 }
 
 .navbar-list {
@@ -85,6 +90,7 @@
   
   .navbar-item {
     display: inline-block;
+    
   }
   
   .navbar-link {
@@ -143,7 +149,7 @@ h1,h2,h3 {
 p {
     font-size: 1em;
     margin-top: 0;
-    margin-bottom: 1.5em
+   
 }
 
 .popUpdesc {
@@ -205,17 +211,15 @@ b {
 /* Intro section styles */
 
 .Hi {
-    max-width: 74rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 2rem
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+   
+    
 }
 
-@media (max-width: 768px) {
-    .Hi {
-        padding:0 1rem
-    }
-}
+
 
 .content {
     background-color: #fafafa;
@@ -224,9 +228,9 @@ b {
 }
 
 .intro {
-    position: fixed;
-    top: 0;
-    height: 80vh;
+    
+    top: 10px;
+    
     width: 100%;
     z-index: -1
 }
@@ -273,113 +277,26 @@ b {
 
 /****************************/
 
-/* Project section begins */
-
-.projects {
-    margin-top: 80vh;
-    background-color: #eee;
+.profil-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.projects .projects-collage {
-    /* max-width: 96rem;    Enable this if you want some margin down the sides of the projects. */
-    margin: 0 auto
-}
+.profil {
 
-.projects .projects-collage::after {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.projects .projects-collage img {
-    max-width: 100%;
-    height: auto
-}
-
-.project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(60, 60, 77);
-    opacity: 0;
-    -webkit-transition: all .3s ease-in;
-    transition: all .3s ease-in
-}
-
-a.project-item {
-    position: relative;
-    display: block;
-    line-height: 0;
-    overflow: hidden;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out
-}
-
-@media (min-width: 769px) {
-    a.project-item {
-        width:50%;
-        float: left
-    }
-}
-
-a.project-item:hover .project-overlay {
-    opacity: .7
-}
-
-a.project-item:hover .project-text {
-    top: 50%;
-    opacity: 1
-}
-
-a.project-item:hover .project-text h2:after {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1)
-}
-
-@media (max-width: 768px) {
-    a.project-item .project-overlay {
-        opacity:.7
-    }
-
-    a.project-item .project-text {
-        top: 50%;
-        opacity: 1
-    }
-}
-
-.project-text {
-    position: absolute;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    line-height: 1;
-    width: 100%;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    font-weight: 300;
-    color: #fafafa
-}
-
-.project-text h2 {
-    position: relative;
-    font-size: 2rem;
-    padding-bottom: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: .125rem
-}
-
-.project-text p {
-    margin: 0;
-    padding-top: 1.5rem
-}
-
-img {
-    height: 375px;
-    width: 100%
+    height: 10%;
+    width: 10%;
+    margin-top: 20px;
+          margin-bottom: 20px;
+          transform: scale(1.5);
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+          -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+          -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+          border-radius: 50%;
 }
 
 /* Project style section ends */
@@ -407,7 +324,7 @@ a.button-slide {
 }
 
 a.button-slide span {
-    display: inline-block;
+  /*  display: inline-block; */
     width: 100%;
     height: 100%;
     -webkit-transition: inherit;
@@ -499,102 +416,6 @@ footer ul li a {
 
 /****************************/
 
-/* PopUp section begins */
-.popUp{
-    color: black;
-    /* height: 70vh; */
-    width: 80vw;
-    position: fixed;
-    top: 10vh;
-    left: 10vw;
-    background-color: #ffffff;
-    box-shadow: 0 0 17px 2px rgba(128, 128, 128, 0.089);
-    display: grid;
-    grid-template-columns: 55% 45%;
-}
-
-.popUp .popUpImg{
-    background: url('https://images.unsplash.com/photo-1526049997133-25caee4c5796?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a785d2392ba5c7683a2b09ee1b40b20&auto=format&fit=crop&w=1048&q=80');
-    background-position: center;
-    background-size: cover;
-    /* height: 70vh; */
-    background-position: center
-}
-
-.popUp div:nth-child(2){
-    padding: 10vh 2em;
-    position: relative;
-} 
-
-.popUp span{
-    display: block;
-    position: absolute;
-    top: 4%;
-    padding: 5px 20px;
-    border-radius: 200px;
-    font-size: 2em;
-    background-color: black;
-    color: honeydew;
-    text-align: center;
-    right: 5%; 
-    cursor: pointer;
-    user-select: none;
-}
-
-.popUp div:nth-child(2) h1{
-    font-size: 2.3em;
-    margin-bottom: 1em;
-}
-
-.popUp div:nth-child(2) p{
-    font-size: 0.9em;
-}
-
-.popUp div:nth-child(2) div{
-    display: grid;
-    grid-template-columns: repeat(2, 10%);
-}
-
-.popUp div:nth-child(2) div a:nth-child(1){
-    width: 20px;
-    height: 20px;
-    background: url('https://image.flaticon.com/icons/svg/1051/1051377.svg');
-    background-size: cover;
-    display: block;
-}
-
-.popUp div:nth-child(2) div a:nth-child(2){
-    width: 20px;
-    height: 20px;
-    background: url('https://image.flaticon.com/icons/svg/1246/1246334.svg');
-    background-size: cover;
-    display: block;
-}
-
-/****************************/
-
-/* PopUp section ends for DESKTOP VIEW */
-
-/* Tablet styling for popUp */
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .popUp{
-        width: 95vw;
-        left: 2.5vw;
-        display: block;
-        top: 5vh;
-    }
-
-    .popUp .popUpImg{
-        background-size: cover;
-        background-position: center;
-        /* display: none; */
-        width: 95vw;
-        height: 50vh;
-    }
-}
-
-/* END OF Tablet styling for popUp */
 
 
 /* START OF styling mobile view for popUp */
@@ -624,7 +445,8 @@ footer ul li a {
 #form { 
   width: 60%;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
 }
 #form h1 { 
   font-size: 2em;
@@ -633,17 +455,18 @@ footer ul li a {
 #form p{ 
   margin-bottom: 3.2em;
   font-size: 1em;
-  color: white;
-  background-color: #1004c5;
+  color: rgb(0, 0, 0);
+  background-color: #abf0ff;
   width: max-content;
   padding: 0.4em;
-  border-radius: 100px;
+  border-radius: 25%;
 }
 #form form { 
   display: block;
   padding: 1em auto;
 }
 #form form input { 
+ 
   display: block;
   width: 80%;
   padding: 1em;
@@ -685,6 +508,7 @@ footer ul li a {
   transition: all 0.6s;
   position: relative;
   border-radius: 100px;
+  justify-content: center;
 } 
 
 #form form button::before { 
@@ -704,6 +528,9 @@ footer ul li a {
 #form form #buttonDiv { 
   cursor: pointer;
   width: 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #form form #buttonDiv:hover ::before{
